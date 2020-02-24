@@ -26,10 +26,6 @@ const NewsListScreen = () => {
     setSearch(value);
   };
 
-  const goToNewsDetail = (item: object) => {
-    NavigationService.navigate('NewsDetail');
-  };
-
   return (
     <SafeAreaView style={Styles.container}>
       <View style={{height: '25%', backgroundColor: 'blue'}}></View>
@@ -40,9 +36,7 @@ const NewsListScreen = () => {
           renderItem={({item}) => {
             return (
               <TouchableOpacity
-                onPress={() => {
-                  goToNewsDetail(item);
-                }}
+                onPress={() => NavigationService.navigate('NewsDetail', {item})}
                 style={{
                   backgroundColor: '#3498db',
                   marginBottom: 10,
