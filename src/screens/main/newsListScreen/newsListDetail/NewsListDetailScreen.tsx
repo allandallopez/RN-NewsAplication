@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {SafeAreaView, View, Text, Image} from 'react-native';
-import Styles from './NewsListDetailScreenStyles';
+import {SafeAreaView, View, Text, Image, ScrollView} from 'react-native';
+import styles from './NewsListDetailScreenStyles';
 import {NewsArticlesType} from '../../../../types/NewsTypes';
 import {useNavigation} from 'react-navigation-hooks';
 
@@ -16,32 +16,33 @@ const NewsListDetailScreen = () => {
   });
 
   return (
-    <SafeAreaView style={Styles.container}>
-      <View
-        style={{
-          backgroundColor: 'green',
-          flexDirection: 'column',
-          justifyContent: 'center',
-        }}>
-        <Image
-          style={{height: 100, width: 250, marginLeft: 100}}
-          source={{uri: itemData.urlToImage}}
-        />
-        <Text style={{fontSize: 20, fontWeight: '700'}}>{itemData.title}</Text>
-        <Text style={{fontSize: 13, fontWeight: '600'}}>
-          Publisher : {itemData.author}
-        </Text>
-        <Text
-        numberOfLines={4} 
-        style={{fontSize: 15, fontWeight: '600'}}>
-          {' '}
-          {itemData.description}
-        </Text>
-        <Text style={{fontSize: 15, fontWeight: '600'}}>
-          {' '}
-          {itemData.content}
-        </Text>
-      </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView
+        style={styles.scrollContainer}
+        showsVerticalScrollIndicator={false}>
+        <View style={styles.descriptionContainer}>
+          <View style={{marginBottom: 10}}>
+            <Text style={styles.titleText}>"{itemData.title}"</Text>
+          </View>
+          <Image
+            style={{height: 300, width: 400}}
+            source={{uri: itemData.urlToImage}}
+          />
+          <View style={styles.highlightContainer}>
+            <Text style={styles.highlightText}>Desctription</Text>
+            <Text style={styles.highlights}>{itemData.description}</Text>
+          </View>
+
+          <View style={styles.borderline}>
+            <Text style={styles.subTitle}>Content</Text>
+            <Text style={styles.contentRegular}>
+              {itemData &&
+                itemData.content &&
+                itemData.content.substring(0, 260)}
+            </Text>
+          </View>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

@@ -34,6 +34,7 @@ const Styles = StyleSheet.create({
     fontWeight: 'bold',
     width: '80%',
     height: 50,
+    marginBottom: 10,
     backgroundColor: 'grey',
   },
   emailInput: {
