@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "101682121901",
+    "firebase_url": "https://oauth-6d86b.firebaseio.com",
+    "project_id": "oauth-6d86b",
+    "storage_bucket": "oauth-6d86b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101682121901:android:844bf9e5a5b4fc67338a24",
+        "android_client_info": {
+          "package_name": "com.matagitestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101682121901-t4cfemq7h0qm8dm4bnnliogsrc6f4grt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matagitestapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "101682121901-2gp6ug60cfmej3sq57amtt4ge89arrhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlenJpa2N9cK_7JQsEgenZp0JF6PypT6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101682121901-2gp6ug60cfmej3sq57amtt4ge89arrhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
