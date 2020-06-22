@@ -25,7 +25,7 @@ const SplashScreen = () => {
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
         <Image
-          source={require('../../assets/Icon/news.png')}
+          source={require('../../assets/Icon/news.jpg')}
           style={styles.logo}
         />
         <Text style={styles.text}>Matagi News App</Text>

@@ -47,7 +47,7 @@ const NewsListScreen = () => {
           onPress={() => getByTitle(search)}>
           <Image
             style={{width: 40, height: 40, marginLeft: 15}}
-            source={require('../../../assets/Icon/search.png')}
+            source={require('../../../assets/Icon/search.jpg')}
           />
         </TouchableOpacity>
       </View>
@@ -84,7 +84,7 @@ const NewsListScreen = () => {
               resizeMode: 'contain',
               alignSelf: 'center',
             }}
-            source={require('../../../assets/emptyNews.png')}
+            source={require('../../../assets/emptyNews.jpg')}
           />
           <View>
             <Text

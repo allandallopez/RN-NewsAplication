@@ -37,7 +37,7 @@ const LoginScreen = () => {
       <Text style={Styles.headTitle}>Hello</Text>
       <Image
         style={Styles.userIcon}
-        source={require('../../../assets/Icon/user.png')}
+        source={require('../../../assets/Icon/user.jpg')}
       />
       <GoogleSigninButton
         style={{width: 300, height: 70}}
